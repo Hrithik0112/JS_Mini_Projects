@@ -1,0 +1,30 @@
+#meme-gen{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+#meme-gen img{
+    height: 430px;
+    object-fit: cover;
+}
+#meme-gen #gen-meme{
+    padding: 8px 20px;
+    border: 3px solid #333;
+    border-radius: 12px;
+    margin: 24px 0px;
+    color: #333;
+    background: white;
+    cursor: pointer;
+    transition: all 400ms;
+    
+}
+
+
+#meme-gen #gen-meme:hover{
+    background-color: yellow;    
+}
+
+#meme-gen #meme-author{
+    margin: 8px;
+}
+
