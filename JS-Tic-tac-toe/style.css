@@ -1,0 +1,76 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    display: grid;
+    place-items: center ;
+}
+.current-player{
+    background-color: aliceblue;
+    color: black;
+    margin-top: -10px;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+    
+}
+.new-game{
+    background-color: aliceblue;
+    color: black;
+    margin-top: -10px;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.game-canvas{
+    width:90%;
+    max-width:20rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+}
+.box{
+    position:relative;
+    width:100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.box1, .box2, .box4, .box5{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid black;
+}
+.box8 , .box7{
+    border-right: 2px solid black;
+
+}
+
+.btn.active{
+    display: flex;
+}
+
+.win{
+    /* background-color: rgba(0, 255, 0, 0.3); */
+    text-decoration: line-through;
+}
